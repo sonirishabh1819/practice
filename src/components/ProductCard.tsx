@@ -1,11 +1,2 @@
-import Image from "next/image";
-import Link from "next/link";
-import type { Product } from "@/data/products";
-
-export function ProductCard({ product }: { product: Product }) {
-  return <article className="group border border-linen bg-white p-3">
-    <div className="relative aspect-[4/3] overflow-hidden bg-mist"><Image src={product.image} alt={product.name} fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover transition duration-500 group-hover:scale-105" /></div>
-    <h3 className="mt-4 font-serif text-lg text-burgundy">{product.name}</h3><p className="mt-1 text-sm font-bold">{product.price}</p>
-    <Link href="/products/royal-kundan-bridal-necklace-set" className="mt-3 inline-block text-[10px] font-bold uppercase tracking-[.18em] text-gold">View details →</Link>
-  </article>;
-}
+import Image from "next/image"; import Link from "next/link"; import type { Product } from "@/data/products";
+export function ProductCard({product}:{product:Product}){return <article className="group border border-linen bg-white p-3"><div className="relative aspect-[4/3] overflow-hidden bg-mist"><Image src={product.image} alt={product.name} fill sizes="(max-width:768px) 100vw, 33vw" className="object-cover transition duration-500 group-hover:scale-105"/></div><h3 className="mt-4 font-serif text-lg text-burgundy">{product.name}</h3><p className="mt-1 text-sm font-bold">{product.price}</p><Link href="/products/royal-kundan-bridal-necklace-set" className="mt-3 inline-block text-[10px] font-bold uppercase tracking-widest text-gold">View details →</Link></article>}
