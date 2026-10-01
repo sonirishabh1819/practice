@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html { scroll-behavior: smooth; }
+body { color: #1c1616; background: #fff; }
+a { transition: color .2s ease, opacity .2s ease; }
+a:hover { color: #c5a044; }
+::selection { background: #c5a044; color: #5c0a1a; }
+.eyebrow { @apply text-[10px] font-bold uppercase tracking-[.28em] text-gold; }
+.section-heading { @apply mx-auto max-w-3xl text-center; }
+.section-heading h2 { @apply mt-3 font-serif text-4xl text-burgundy md:text-5xl; }
+.ornament { @apply mx-auto mt-7 flex w-36 items-center gap-3 text-gold before:h-px before:flex-1 before:bg-gold after:h-px after:flex-1 after:bg-gold; }
+.button-primary { @apply inline-flex items-center justify-center bg-burgundy px-6 py-3 text-[11px] font-bold uppercase tracking-[.14em] text-white hover:text-white hover:opacity-90; }
+.button-outline { @apply inline-flex items-center justify-center border border-burgundy px-6 py-3 text-[11px] font-bold uppercase tracking-[.14em] text-burgundy; }
+.prose-copy { @apply text-sm leading-7 text-slate; }
